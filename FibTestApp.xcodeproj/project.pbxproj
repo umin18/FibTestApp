@@ -19,7 +19,18 @@
 		293A1ADB23BE5B2A006754F7 /* FibonacciModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A1ADA23BE5B2A006754F7 /* FibonacciModel.swift */; };
 		293A1ADE23BE6F10006754F7 /* InputDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A1ADD23BE6F10006754F7 /* InputDelegateHandler.swift */; };
 		293A1AE323BE7A06006754F7 /* TextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A1AE223BE7A06006754F7 /* TextFieldExtensions.swift */; };
+		293A1AEB23BFA112006754F7 /* FibTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A1AEA23BFA112006754F7 /* FibTestAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		293A1AED23BFA112006754F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 293A1AB023BE47F9006754F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 293A1AB723BE47F9006754F7;
+			remoteInfo = FibTestApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		293A1AB823BE47F9006754F7 /* FibTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +47,20 @@
 		293A1ADA23BE5B2A006754F7 /* FibonacciModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciModel.swift; sourceTree = "<group>"; };
 		293A1ADD23BE6F10006754F7 /* InputDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDelegateHandler.swift; sourceTree = "<group>"; };
 		293A1AE223BE7A06006754F7 /* TextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtensions.swift; sourceTree = "<group>"; };
+		293A1AE823BFA112006754F7 /* FibTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		293A1AEA23BFA112006754F7 /* FibTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibTestAppTests.swift; sourceTree = "<group>"; };
+		293A1AEC23BFA112006754F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		293A1AB523BE47F9006754F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293A1AE523BFA112006754F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				293A1ABA23BE47F9006754F7 /* FibTestApp */,
+				293A1AE923BFA112006754F7 /* FibTestAppTests */,
 				293A1AB923BE47F9006754F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				293A1AB823BE47F9006754F7 /* FibTestApp.app */,
+				293A1AE823BFA112006754F7 /* FibTestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +156,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		293A1AE923BFA112006754F7 /* FibTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				293A1AEA23BFA112006754F7 /* FibTestAppTests.swift */,
+				293A1AEC23BFA112006754F7 /* Info.plist */,
+			);
+			path = FibTestAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +185,24 @@
 			productReference = 293A1AB823BE47F9006754F7 /* FibTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		293A1AE723BFA112006754F7 /* FibTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 293A1AF123BFA112006754F7 /* Build configuration list for PBXNativeTarget "FibTestAppTests" */;
+			buildPhases = (
+				293A1AE423BFA112006754F7 /* Sources */,
+				293A1AE523BFA112006754F7 /* Frameworks */,
+				293A1AE623BFA112006754F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				293A1AEE23BFA112006754F7 /* PBXTargetDependency */,
+			);
+			name = FibTestAppTests;
+			productName = FibTestAppTests;
+			productReference = 293A1AE823BFA112006754F7 /* FibTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +215,10 @@
 				TargetAttributes = {
 					293A1AB723BE47F9006754F7 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					293A1AE723BFA112006754F7 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 293A1AB723BE47F9006754F7;
 					};
 				};
 			};
@@ -182,6 +236,7 @@
 			projectRoot = "";
 			targets = (
 				293A1AB723BE47F9006754F7 /* FibTestApp */,
+				293A1AE723BFA112006754F7 /* FibTestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +249,13 @@
 				293A1AC823BE47FB006754F7 /* LaunchScreen.storyboard in Resources */,
 				293A1AC523BE47FB006754F7 /* Assets.xcassets in Resources */,
 				293A1AC323BE47F9006754F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293A1AE623BFA112006754F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +278,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		293A1AE423BFA112006754F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293A1AEB23BFA112006754F7 /* FibTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		293A1AEE23BFA112006754F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 293A1AB723BE47F9006754F7 /* FibTestApp */;
+			targetProxy = 293A1AED23BFA112006754F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		293A1AC123BE47F9006754F7 /* Main.storyboard */ = {
@@ -386,6 +464,46 @@
 			};
 			name = Release;
 		};
+		293A1AEF23BFA112006754F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FibTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apolis.FibTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FibTestApp.app/FibTestApp";
+			};
+			name = Debug;
+		};
+		293A1AF023BFA112006754F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FibTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apolis.FibTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FibTestApp.app/FibTestApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +521,15 @@
 			buildConfigurations = (
 				293A1ACD23BE47FB006754F7 /* Debug */,
 				293A1ACE23BE47FB006754F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		293A1AF123BFA112006754F7 /* Build configuration list for PBXNativeTarget "FibTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293A1AEF23BFA112006754F7 /* Debug */,
+				293A1AF023BFA112006754F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

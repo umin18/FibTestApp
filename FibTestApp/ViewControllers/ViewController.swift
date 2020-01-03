@@ -82,7 +82,6 @@ class ViewController: UIViewController, InputTextFieldProtocol{
         calculationTimeLabel.text = "Fibonacci(\(fibOf!)) in \(timeExec!) microseconds"
         tableView.reloadData()
     }
-    
 }
 
 //MARK: TableView methods
